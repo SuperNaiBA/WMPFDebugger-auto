@@ -2,7 +2,7 @@
 
 [![License: GPL-2.0](https://img.shields.io/badge/License-GPL%202.0-blue.svg)](https://opensource.org/licenses/GPL-2.0)
 [![Electron](https://img.shields.io/badge/Built%20with-Electron-47848F)](https://www.electronjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-v14%2B-green)](https://nodejs.org/)
+[![Node.js](https://nodejs.org/dist/v24.14.0/node-v24.14.0-x64.msi)](https://nodejs.org/)
 
 **WMPFDebugger** 是一个现代化的微信小程序桌面调试工具，支持自动检测微信小程序启动并立即打开控制台进行调试「最新重构版」。
 
@@ -33,7 +33,7 @@
 ## 🚦 快速开始
 
 ### 环境要求
-- **Node.js** v14 或更高版本
+- **Node.js**  LTS v22 或更高版本
 - **npm** 或 **yarn**
 - **微信桌面版** 已安装
 - **Windows 10/11**（目前仅支持Windows）
