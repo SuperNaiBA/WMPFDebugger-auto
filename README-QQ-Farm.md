@@ -10,7 +10,7 @@
 - **简化流程**：无需复杂配置，开箱即用
 - **兼容性强**：支持微信版本4.x及以上
 
-##⏬ 含依赖包（不含环境）
+## ⏬ 含依赖包（不含环境）
 - **Releases**：[Farm版下载](https://github.com/SuperNaiBA/WMPFDebugger-auto/releases/tag/%3Cversion%3E%60v1.0.0)
 
 
