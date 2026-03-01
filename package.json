@@ -1,0 +1,49 @@
+{
+  "name": "WMPFDebugger",
+  "version": "1.0.0",
+  "main": "UI/main.js",
+  "license": "GPL-2.0-only",
+  "author": "SuperNaiBA",
+  "dependencies": {
+    "frida": "^17.3.2",
+    "protobufjs": "^7.5.4",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/ws": "^8.18.1",
+    "electron": "^31.2.0",
+    "electron-builder": "^26.8.1",
+    "electron-packager": "^17.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "ui": "electron UI/main.js",
+    "package": "electron-builder",
+    "package-win": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.example.wmpfdebugger",
+    "productName": "WMPFDebugger",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMPFDebugger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+        .instructions {
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .button-group {
+            display: flex;
+            gap: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .start-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .start-btn:hover {
+            background-color: #45a049;
+        }
+        .open-devtools-btn {
+            background-color: #008CBA;
+            color: white;
+        }
+        .open-devtools-btn:hover {
+            background-color: #007399;
+        }
+        .status {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .status.running {
+            background-color: #e8f5e8;
+            color: #2e7d32;
+        }
+        .status.stopped {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WMPFDebugger</h1>
+        
+        <div class="instructions">
+            <p>这是WMPFDebugger的桌面版本界面。</p>
+            <ol>
+                <li>点击"启动调试器"按钮启动后端服务</li>
+                <li>点击"打开DevTools"按钮打开Chrome开发者工具界面</li>
+            </ol>
+        </div>
+        
+        <div class="button-group">
+            <button class="start-btn" onclick="startDebugger()">启动调试器</button>
+            <button class="open-devtools-btn" onclick="openDevTools()">打开DevTools</button>
+        </div>
+        
+        <div id="status" class="status stopped">未运行</div>
+    </div>
+
+    <script>
+        let isRunning = false;
+        let serverProcess = null;
+        
+        function startDebugger() {
+            if (isRunning) {
+                alert('调试器已经在运行中');
+                return;
+            }
+            
+            // 这里只是模拟启动过程，实际环境中需要使用Node.js的child_process模块
+            isRunning = true;
+            document.getElementById('status').textContent = '运行中';
+            document.getElementById('status').className = 'status running';
+            alert('调试器已启动，正在监听端口62000');
+        }
+        
+        function openDevTools() {
+            if (!isRunning) {
+                alert('请先启动调试器');
+                return;
+            }
+            
+            // 打开Chrome开发者工具界面
+            window.open('devtools://devtools/bundled/inspector.html?ws=127.0.0.1:62000', '_blank');
+        }
+    </script>
+</body>
+</html>
