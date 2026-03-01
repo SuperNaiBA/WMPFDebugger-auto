@@ -9,7 +9,9 @@
 - **美化UI界面**：重新设计的桌面版界面，操作更直观
 - **简化流程**：无需复杂配置，开箱即用
 - **兼容性强**：支持微信版本4.x及以上
-Releases：[最早版下载](https://github.com/SuperNaiBA/WMPFDebugger-auto/releases/tag/%3Cversion%3E%60v1.0.0)
+
+##⏬ 含依赖包（不含环境）
+- **Releases**：[Farm版下载](https://github.com/SuperNaiBA/WMPFDebugger-auto/releases/tag/%3Cversion%3E%60v1.0.0)
 
 
 ## 🚀 快速开始
@@ -41,7 +43,7 @@ Releases：[最早版下载](https://github.com/SuperNaiBA/WMPFDebugger-auto/rel
 - **适配其他版本**：请参考项目内的 `ADAPTATION.md` 文件说明。你也可以提交新版本适配的Issue（通常只考虑较新版本的适配请求）。
 
 ### 微信版本与WMPF升级
-- **微信版本 > 4.x**：从 [pc.weixin.qq.com](https://pc.weixin.qq.com) 下载最新的微信安装程序，最新的WMPF捆绑包已包含在安装程序中。
+- **微信版本 > 4.x**：从 [cscnk52/wechat-windows-versions](https://github.com/cscnk52/wechat-windows-versions/releases) 下载微信安装程序，推荐V4.1.1.19，最新的WMPF捆绑包已包含在安装程序中。
 - **微信版本 < 4.x**：在微信搜索框中输入 `showcmdwnd`（不要按回车），命令窗口弹出后输入 `/plugin set_grayvalue=202&check_update_force` 并按回车。如果有可用更新，最新的WMPF插件将被下载。重启微信以应用插件升级。
 
 ## ⚠️ 重要注意事项
