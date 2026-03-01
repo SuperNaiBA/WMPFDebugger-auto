@@ -1,8 +1,11 @@
 # WMPFDebugger - 微信小程序自动调试工具
 
-[![License: GPL-2.0](https://img.shields.io/badge/License-GPL%202.0-blue.svg)](https://opensource.org/licenses/GPL-2.0)
-[![Electron](https://img.shields.io/badge/Built%20with-Electron-47848F)](https://www.electronjs.org/)
-[![Node.js](https://nodejs.org/dist/v24.14.0/node-v24.14.0-x64.msi)](https://nodejs.org/)
+[![GitHub stars](https://img.shields.io/github/stars/SuperNaiBA/WMPFDebugger-auto)](https://github.com/SuperNaiBA/WMPFDebugger-auto/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/SuperNaiBA/WMPFDebugger-auto)](https://github.com/SuperNaiBA/WMPFDebugger-auto/issues)
+[![License](https://img.shields.io/github/license/SuperNaiBA/WMPFDebugger-auto)](LICENSE)
+[![Electron Version](https://img.shields.io/badge/Electron-%5E28.0.0-blue?logo=electron)](https://www.electronjs.org/)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D%2022.0.0-brightgreen?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](https://github.com/SuperNaiBA/WMPFDebugger-auto)
 
 **WMPFDebugger** 是一个现代化的微信小程序桌面调试工具，支持自动检测微信小程序启动并立即打开控制台进行调试「最新重构版」。
 
@@ -208,3 +211,12 @@ npm run package
 ---
 
 **提示**: 使用前请确保已安装微信桌面版，并且有可调试的小程序。启动调试器后，请打开微信并启动小程序进行调试。
+## Star History
+
+<a href="https://star-history.com/#SuperNaiBA/WMPFDebugger-auto&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=SuperNaiBA/WMPFDebugger-auto&type=Date&theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=SuperNaiBA/WMPFDebugger-auto&type=Date">
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=SuperNaiBA/WMPFDebugger-auto&type=Date">
+  </picture>
+</a>
